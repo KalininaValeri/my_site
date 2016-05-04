@@ -1,13 +1,47 @@
+@import "icons";
+
+@font-face {
+  font-family: Popular;
+  src: url(../font/2211.ttf);
+}
+
 body {
-  //background: url("../img/fon.jpg");
   margin: 0;
   color: #888;
   font-size: 16px;
-  font-family: Open sans;
+  font-family: Popular, sans-serif;
 }
 
-  section {
-    padding: 80px;
-    //background: #333333;
+section {
+  background: url("../img/fon.jpg");
+  padding-top: 80px;
+  //background: #333333;
+}
+
+.content {
+  background: white;
+
+  .content_title {
+    color: #333333;
+    padding-left: 15px;
   }
+
+  .content_text {
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .icon-vk,
+  .icon-github {
+    font-size: 60px;
+    color: #333333;
+    display: inline-block;
+    padding-right: 5px;
+  }
+}
+
 

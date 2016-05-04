@@ -10,16 +10,20 @@ body {
   color: #888;
   font-size: 16px;
   font-family: Popular, sans-serif;
+  background: url("../img/fon.jpg");
 }
 
 section {
-  background: url("../img/fon.jpg");
   padding-top: 80px;
+  background: rgba(51, 51, 51, 0.95);
+
   //background: #333333;
 }
 
 .content {
   background: white;
+  padding: 40px;
+  padding-bottom: 300px;
 
   .content_title {
     color: #333333;
@@ -44,6 +48,7 @@ section {
   }
 
   .circle {
+    position: relative;
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -56,6 +61,21 @@ section {
 
   .circle_height {
     height: 100%;
+  }
+
+  .circle_color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    background: rgba(51, 51, 51, 0.7);
+  }
+
+  .circle:hover {
+    .circle_color {
+      display: none;
+    }
   }
 }
 
